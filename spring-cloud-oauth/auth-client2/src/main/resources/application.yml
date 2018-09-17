@@ -5,6 +5,7 @@ server:
   contextPath: /
 
 # Configure the Authorization Server and User Info Resource Server details
+# 任何需要身份验证的请求都将被重定向到授权服务器
 security:
   oauth2:
     client:

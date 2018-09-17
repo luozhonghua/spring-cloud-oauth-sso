@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**   
  * @ClassName:  ResourceController
- * @Description:TODO(这里用一句话描述这个类的作用)
+ * @Description:提供一个/usr接口供客户端来获得用户的凭证
  * @author: luozhonghua
  * @date:   2018年7月19日 下午2:47:55
  * @version V1.0

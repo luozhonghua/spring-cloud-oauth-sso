@@ -9,7 +9,7 @@ import com.peterwanghao.spring.cloud.oauth.authresource.model.Person;
 
 /**   
  * @ClassName:  PersonInfoController
- * @Description:TODO(这里用一句话描述这个类的作用)
+ * @Description:提供REST服务接口供客户端调用
  * @author: luozhonghua
  * @date:   2018年7月19日 下午2:43:05
  * @version V1.0
