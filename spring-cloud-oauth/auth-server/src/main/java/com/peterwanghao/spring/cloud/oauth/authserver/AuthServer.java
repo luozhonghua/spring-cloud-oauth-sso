@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.*;
 /**   
  * @ClassName:  AuthServer
  * @Description:OAuth认证服务
- * @author: wanghao
+ * @author: luozhonghua
  * @date:   2018年7月19日 下午2:21:34
  * @version V1.0
  * 

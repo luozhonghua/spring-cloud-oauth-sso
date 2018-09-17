@@ -9,7 +9,7 @@ import com.peterwanghao.spring.cloud.oauth.authclient.filters.SimpleFilter;
 /**   
  * @ClassName:  Application
  * @Description:TODO(这里用一句话描述这个类的作用)
- * @author: wanghao
+ * @author: luozhonghua
  * @date:   2018年7月19日 下午3:21:27
  * @version V1.0
  * 

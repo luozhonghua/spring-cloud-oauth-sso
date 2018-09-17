@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 /**   
  * @ClassName:  CloudSiteController
  * @Description:TODO(这里用一句话描述这个类的作用)
- * @author: wanghao
+ * @author: luozhonghua
  * @date:   2018年7月19日 下午3:26:39
  * @version V1.0
  * 

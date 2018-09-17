@@ -13,7 +13,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 /**   
  * @ClassName:  WebSecurityConfigurer
  * @Description:TODO(这里用一句话描述这个类的作用)
- * @author: wanghao
+ * @author: luozhonghua
  * @date:   2018年7月19日 下午2:14:24
  * @version V1.0
  * 

@@ -19,7 +19,7 @@ import org.springframework.security.oauth2.provider.token.store.KeyStoreKeyFacto
 /**   
  * @ClassName:  AuthServerConfigurer
  * @Description:OAuth认证服务配置
- * @author: wanghao
+ * @author: luozhonghua
  * @date:   2018年7月19日 下午2:10:07
  * @version V1.0
  * 
@@ -44,6 +44,11 @@ public class AuthServerConfigurer extends AuthorizationServerConfigurerAdapter {
 	@Autowired
 	private UserDetailsService userDetailsService;
 
+    /**
+     * 配置客户端详情信息(内存或JDBC来实现)
+     * @param clients
+     * @throws Exception
+     */
 	@Override
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 		clients.inMemory()
@@ -56,11 +61,20 @@ public class AuthServerConfigurer extends AuthorizationServerConfigurerAdapter {
 				.scopes("myscope").autoApprove(true).accessTokenValiditySeconds(30).refreshTokenValiditySeconds(1800);
 	}
 
+    /**
+     * 配置 JwtAccessToken 转换器
+     * @param endpoints
+     * @throws Exception
+     */
 	@Override
 	public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
 		endpoints.accessTokenConverter(jwtAccessTokenConverter()).userDetailsService(userDetailsService);
 	}
 
+    /**
+     * 使用非对称加密算法来对Token进行签名
+     * @return
+     */
 	@Bean
 	public JwtAccessTokenConverter jwtAccessTokenConverter() {
 		KeyStoreKeyFactory keyStoreKeyFactory = new KeyStoreKeyFactory(keystore, keystorePassword.toCharArray());

@@ -3,7 +3,7 @@ package com.peterwanghao.spring.cloud.oauth.authresource.model;
 /**   
  * @ClassName:  Person
  * @Description:用户信息对象
- * @author: wanghao
+ * @author: luozhonghua
  * @date:   2018年7月19日 下午2:43:46
  * @version V1.0
  * 

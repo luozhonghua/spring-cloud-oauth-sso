@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 /**   
  * @ClassName:  WebMvcConfigurer
  * @Description:TODO(这里用一句话描述这个类的作用)
- * @author: wanghao
+ * @author: luozhonghua
  * @date:   2018年7月19日 下午2:13:01
  * @version V1.0
  * 
