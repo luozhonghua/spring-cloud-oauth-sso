@@ -58,7 +58,11 @@ public class AuthServerConfigurer extends AuthorizationServerConfigurerAdapter {
 			   .and()
 				.withClient("second").secret("passwordforauthserver")
 				.redirectUris("http://localhost:8081/").authorizedGrantTypes("authorization_code", "refresh_token")
-				.scopes("myscope").autoApprove(true).accessTokenValiditySeconds(30).refreshTokenValiditySeconds(1800);
+				.scopes("myscope").autoApprove(true).accessTokenValiditySeconds(30).refreshTokenValiditySeconds(1800)
+                .and()
+                .withClient("third").secret("passwordforauthserver")
+                .redirectUris("http://localhost:8082/").authorizedGrantTypes("authorization_code", "refresh_token")
+                .scopes("myscope").autoApprove(true).accessTokenValiditySeconds(30).refreshTokenValiditySeconds(1800);
 	}
 
     /**
